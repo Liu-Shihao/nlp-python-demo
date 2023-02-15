@@ -22,8 +22,7 @@ def entsLabelTest():
     doc = nlp('I went to Beijing where I met my old friend Jack from uni.')
     for ent in doc.ents:
         print('{}-{}'.format(ent, ent.label_))
-
-    displacy.render(doc, style='ent', jupyter=True)
+    displacy.render(doc, style='ent', jupyter=False)
 
 if __name__ == '__main__':
     tokenTest()
