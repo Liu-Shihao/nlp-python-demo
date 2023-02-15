@@ -1,4 +1,3 @@
-import nltk
 from nltk.metrics import edit_distance
 
 '''

@@ -15,9 +15,8 @@ def index():
     if request.method == "POST":
         question = request.form["question"]
         print("question:"+question)
-        return redirect(url_for("index", result="haha..."))
+        return redirect(url_for("index", result="I'm your personal assistant. You can call me Jarvis."))
     result = request.args.get("result")
-    print("result:"+result)
     return render_template("index.html",result=result)
 
 if __name__ == '__main__':

@@ -2,7 +2,7 @@ import spacy
 
 from spacy.lang.en.stop_words import STOP_WORDS
 '''
-
+spaCy主要功能包括分词、词性标注、词干化、命名实体识别、名词短语提取等等。
 '''
 
 nlp = spacy.load("en_core_web_sm")
