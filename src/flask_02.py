@@ -9,11 +9,16 @@ app = Flask(__name__)
 
 
 '''
-@app.route('/')
+@app.route('/',methods=['GET','POST'])
 def index():
     print("http method:"+request.method)
-    # return redirect(url_for("index", "Hello NLP"))
-    return render_template("index.html")
+    if request.method == "POST":
+        question = request.form["question"]
+        print("question:"+question)
+        return redirect(url_for("index", result="haha..."))
+    result = request.args.get("result")
+    print("result:"+result)
+    return render_template("index.html",result=result)
 
 if __name__ == '__main__':
     app.run()
