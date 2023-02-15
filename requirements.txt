@@ -4,3 +4,4 @@ spacy=3.5
 nltk=3.8.1
 Flask=2.2.2
 ipython=8.10.0
+gensim=4.3.0
